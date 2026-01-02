@@ -17,6 +17,34 @@ The conversion from a 3D printer to a wire EDM can be done in 6 steps:
 - Water loop
 - Fusion 360 post processor
 
+
+| Part | Quantity | Cost per lot |
+|- | - | - |
+| Raspberry pi pico  | 1 | 5€ |
+| Linear rail MGN12H 300mm | 2 | 24€ |
+| Screws | 50 | 10€ |
+| Nema 17 gearbox 51:1 | 2 | 40€ |
+| 24V membrane pump | 1 | 15€ |
+| Filter cardrige | 4 | 10€ |
+| Adapter 1/2" -> 6mm | 2 | 5€ |
+| M6 push pull connector | 5 | 5€ |
+| 6mm pneumatic pipes | 2m | 3€ |
+| TC4428 | 2 | 4€ |
+| IRF135B203 (or similar) | 2 | 10€ |
+| 4.7uF Polymer capacitor | 5 | 5€ |
+| Buck converter | 1 | 2€ |
+| Acrylic sheets | 1 | 20€ |
+| Oled screen | 1 | 3€ |
+| L7812CV | 1 | 2€ |
+| JST connectors | 1 | 4€ |
+| Banana connectors | 5 | 4€ |
+| Wire diodes resistors | 1 | 5€ |
+| Hybrid bearings | 2 | 12€ |
+| Bearings | 4 | 4€ |
+| PLA 200g | 1 | 4€ |
+| Aluminium parts | 1 | 50€ |
+
+| Total | a lot | 250€ |
 The full part list with some product links is in the [parts folder](Parts/)
 
 
