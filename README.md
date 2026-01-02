@@ -43,7 +43,7 @@ The conversion from a 3D printer to a wire EDM can be done in 6 steps:
 | Bearings | 4 | 4€ |
 | PLA 200g | 1 | 4€ |
 | Aluminium parts | 1 | 50€ |
-
+|  |  |  |
 | Total | a lot | 250€ |
 The full part list with some product links is in the [parts folder](Parts/)
 
