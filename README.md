@@ -1,18 +1,20 @@
 # WireEDM
 
 Wire EDM uses electrical discharges to cut any conductive materials (brass, steel, aluminium even tungsten carbide) with no mechanical forces, enabling high precision, deep cuts, and machining of hard or delicate materials without deformation. 
-This project demonstrates how to build a DIY wire EDM machine using salvaged components from an old 3D printer and other affordable parts, keeping the total cost around 250€ + 4 machined parts the ender 3 and less than 50h of work.
+This project show how to build a DIY wire EDM machine using salvaged components from an old 3D printer and other affordable parts, keeping the total cost around 250€ + 4 machined parts the ender 3 and less than 50h of work (if everything goes right).
 
-The machine's frame and motion system leverage the hardware of the Ender 3,  with 1:51 gear reductions on the X and Y axes to enable extremely slow and precise movements required for EDM. 
-A Raspberry Pi Pico clone with a TC4428 and a powerful MOSFET are used to switch up to 10A at 50KHz
+The machine's motion system is just an Ender 3  with 1:51 gear reductions on the X and Y axes. This is required for EDM because it's a slow process and and NEMA 17 on their own are too fast.
+A Raspberry Pi Pico with a TC4428 and a powerful MOSFET are used to switch up to 10A at 60KHz
 
-This project includes guidance on generating toolpaths using a modified post processor from Fusion 360
-Depending on the availability of tools and salvaged materials, replication costs may vary slightly. This project took me a few hundreds of hours of developpment but you should be able to replicate in less than 50h.
+The toolpath generation is simplified to be user friendly and a small tutorial is available on this video: https://youtu.be/iLnna7q0drs?si=ul4SjGQGCm429spJ
+
+And a complete tutorial will be added on the same channel in a few months.
+
 
 The conversion from a 3D printer to a wire EDM can be done in 6 steps:
 - Mechanical modifications
 - Wire feeder
-- Firmware update (marlin)
+- Firmware update
 - Ark generator
 - Water loop
 - Fusion 360 post processor
@@ -49,28 +51,31 @@ The full part list with some product links is in the [parts folder](Parts/)
 
 
 # WARNiNGS
-The voltage is lower than the SELV (50V for AC 120V for DC) in DRY CONDITIONS, for WET CONDITION the SELV is (25V for AC and 60 for DC). In addition there is no GFCI to protect you so disconnect the PSU everytime you're planning to touch a metalic component and wear at leat nitrile gloves. If you don't know precisely what you are doing just skip this project.
+The voltage is higher than the SELV in wet conditions, I don't know exactly how dangerous it is but please consider that it's a lethal risk and prepare yourself accordingly. If you don't know what your doing please don't try to replicate this project.
 
 <img src="Photos/electicity.jpeg" width="400">
 
 
 Copper is considered as a heavy metal, the best way to deal with the dirty water is to let it sit for a while in a ventilated area to evaporate all the water, after that it's jsut metal powder and can be disposed in the local recycling center.
 
+This machine can generate a lot of EMF, it can be an issue if you have a heart assistance and it can perturb some electronics. Smartphones laptop and expensive stuff are usually safe but the screen of the ender 3 is glitching a lot, it's just the screen not the control so nothing to worry about.
 
 # Mecanical parts
 ## Motion
 
 A big advantage of wire EDM compared to CNC milling is that the frame doesn't need to be very stiff, the hardware just need to support the wire feeder on the X axis and the water tank ~4kg on the Y axis. The Z axis isn't used during the cutting process but it's quite usefull to help changing the wire.
 
-I've had a linear rail (MGN12H) on X and Y axis, it can be bolted directly on X axis with T nuts and for the why axis you need to drill 4 holes in the buildplate support thats all.
+I've added a linear rail (MGN12H) on X and Y axis, it can be bolted directly on X axis with T nuts and for the why axis you need to drill 4 holes in the buildplate support, thats all.
+
 Wire EDM can be very slow depending on the thickness so one of the most important requirement is to be able to move slowly at a fixed rate. Regular stepper motors aren't able to do that, even with microstepping I made a fully printable belt reducer 1:64 but it need some improvements so I've just brought gearbox for nema 17 that can be directly connected to a 2GT pulley.
+They cost 20€ each and have some backlash so it's far from the best solution.
 
 ## Wire feeder
 
 The wire feeder is the only complicated part which need to be custom made because it needs to fullfill a few requierments:
 - Stifness, during the cutting process the arcs can generate vibrations, to achieve a good surface finish the wire need to be very straight
-- Electrically insulated, even if the cutting is done under de-ionised water some electrolysis can occur which can reduce the power output. An insulated feeder also prevent from shorts if a metal part fall between the wire and the feeder
-- Grounded, at 20kHz the long wire is a big antenna which can emit a lot of parasites and damage electronics. Grounding as much part as possible is crucial to avoid that (and any risk for pacemaker users)
+- Electrically insulated, even if the cutting is done under de-ionised water, some electrolysis can occur which can reduce the power output. An insulated feeder also prevent from shorts if a metal part fall between the wire and the feeder
+- Grounded, at 60kHz the long wire is a big antenna which can emit a lot of parasites and damage electronics. Grounding as much part as possible is crucial to avoid that (and any risk for pacemaker users)
 - Tensionner mechanism, to avoid wire vibration the wire need to be adequatly tensionned.
 - Waste spool, wire edm consume the workpiece AND the wire, depending on the material it can use a lot of wire
 - Hard wire guide, I you have an old ender 3 you've probably experience filament grinding the extruder even if its plastic against plastic, the same thing can happend here with soft brass
@@ -81,13 +86,16 @@ The wire feeder is the only complicated part which need to be custom made becaus
 <img src="Photos/CAD.jpg" width="400">
 
 This is the CAD of the second version, the extruder (nema 17 + a brass cylinder) is pulling the wire all the way from the tensionner. 
-The tensionner conssit of two all bearing pressing into each other like a 3D printer extruder, the sping can b adjust to block more the wire and provide more tension.
-Then, the wire need to be guided very precisely, for the upper guide I use a off the shelf rubis nozzle with a plastic nozzle around it for watercooling. The lower guide is a ceramic ball bearing with a PLA spacer and a .4mm brass nozzle to push the wire against the spacer. The two other ball bearings (ceramic for the lower one and steel with plastic cover for the upper one) just guide the wire to the extruder.
+The tensionner conssit of two ball bearing pressing into each other like a 3D printer extruder, the sping can be adjust to block more the wire and provide more tension.
+A standard value of tension for a 0.25mm wire is 18N, I don't have an easy way to measure it for now. Maybe I can link the tension with the resonance frequency and use an audio app for calibration.
+
+Then, the wire need to be guided very precisely, for the upper guide I use an off the shelf rubis nozzle. A water jet is used to evacuate the chips, the nozzle is printed in pla, the pressure is not that high. The lower guide is a ceramic ball bearing with a PLA spacer and a .4mm brass nozzle to push the wire against the spacer. The two other ball bearings (ceramic for the lower one and steel with plastic cover for the upper one) just guide the wire to the extruder.
 
 The ball bearings needs to be in ceramic for three reason:
 1. Corosion
 2. No lubricant can desovle in water
 3. High hardness
+4. Electrical insulation 
 
 
 The wire is connected to the (-) terminal of the PSU by the brass wheel and in the future a tungsten carbide contact block, but since the wire emit EMF like an antenna, I want to ground as much metal as I can, so the whole motor assembly is at the same potential as the wire, but the frame of the printer and the red part are grounded. The voltage arent high so a layer of epoxy or an anodization is enougth to insulate the two regions.
