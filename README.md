@@ -200,7 +200,7 @@ It's easy to setup a waterjet tool with 0.3mm stream and you can add a very long
 
 <img src="Photos/lead_in.jpg" height="200"><img src="Photos/postprocess.jpg" height="200">
 
-Then you need to select the wire edm post processor, I modified the wazer post processor to match my needs, I will not detail it here, the file is in this folder, you just have to paste it in the appropriate location.
+Then you need to select the wire edm [post processor for fusion 360](Code/EnderSpark.cps), I modified the wazer post processor to match my needs, I will not detail it here, the file is in this folder, you just have to paste it in the appropriate location.
 
 I have a very small database for differents materials, so if the thickness is right, just selec the material and it should be good to go. It's an ongoing project soyou will probably have sligly differents settings than me, I'll recommand you to do a speedtest for the material you're planing to cut and modify the database:
 
