@@ -19,10 +19,8 @@ The conversion from a 3D printer to a wire EDM can be done in 6 steps:
 - Water loop
 - Fusion 360 post processor
 
-
+**Electronics**
 | Part | Quantity | Cost per lot |
-|- | - | - |
-| Electronics | - | - |
 |- | - | - |
 | TC4428 | 2 | 4€ |
 | IRF135B203 (or similar) | 2 | 5€ |
@@ -34,7 +32,12 @@ The conversion from a 3D printer to a wire EDM can be done in 6 steps:
 | Banana connectors | 5 | 4€ |
 | Wire diodes resistors | 1 | 5€ |
 | Raspberry pi pico  | 1 | 5€ |
-| Mechanics | - | - |
+|  |  |  |
+| Total | a lot | 40€ |
+
+**Mechanics**
+
+| Part | Quantity | Cost per lot |
 |- | - | - |
 | Linear rail MGN12H 300mm | 2 | 24€ |
 | Screws | 50 | 10€ |
@@ -43,7 +46,12 @@ The conversion from a 3D printer to a wire EDM can be done in 6 steps:
 | Bearings | 4 | 4€ |
 | PLA 200g | 1 | 4€ |
 | Aluminium parts | 1 | 50€ |
-| Water | - | - |
+|  |  |  |
+| Total | a lot | 150€ |
+
+**Water**
+
+| Part | Quantity | Cost per lot |
 |- | - | - |
 | 24V membrane pump | 1 | 15€ |
 | PC/PS plate 50X50X5mm | 1 | 15€ |
@@ -57,7 +65,7 @@ The conversion from a 3D printer to a wire EDM can be done in 6 steps:
 | 4mm silicone tube | 0.5m | 1€ |
 | Silicone seal cartridge | 1 | 5€ |
 |  |  |  |
-| Total | a lot | 250€ |
+| Total | a lot | 80€ |
 The full part list with some product links is in the [parts folder](Parts/)
 
 
