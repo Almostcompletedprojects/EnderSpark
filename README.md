@@ -35,7 +35,6 @@ The conversion from a 3D printer to a wire EDM can be done in 6 steps:
 | IRF135B203 (or similar) | 2 | 10€ |
 | 4.7uF Polymer capacitor | 5 | 5€ |
 | Buck converter | 1 | 2€ |
-| Acrylic sheets | 1 | 20€ |
 | Oled screen | 1 | 3€ |
 | L7812CV | 1 | 2€ |
 | JST connectors | 1 | 4€ |
