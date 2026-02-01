@@ -177,8 +177,8 @@ The water VAT was generated with:
 https://www.makercase.com/basicBox
 
 # Firmware modifications
-A few modifications of the firmware are requiered and listed here: Code/Firmware ender3V2/Modifications list
-The configuration.h, configuration_adv.h and pins.h for an ender3V2 are also availlable here: Code/Firmware ender3V2
+A few modifications of the firmware are requiered and listed [here](Code/Firmware ender3V2/Modifications list)
+The configuration.h, configuration_adv.h and pins.h for an ender3V2 are also availlable [Ender3V2](Code/Firmware ender3V2)
 
 Basically we disable everything related to temperature management, enable UART2 to communicate with the pi pico (which require 2 precise solders and 2 traces cut on the motherboard).
 We also need to configure a second output fan which can be enabled by M106 for the waterpump on the old output port of the nozzle. 
