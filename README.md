@@ -202,8 +202,8 @@ wirespeedpermm is the wire consumed per mm² with the previous example of 30mm²
 A cheap 100m of 0.2mm joaillery brass wire (2€) will last for more than two hours ~0.02€/m, a more expensive 5kg of edm 0.25mm brass wire (110€) is almost 12km so ~0.01€/m and 250h of use.
 In the future I will try molybdenum wire which is just a bit more expensive but it can be used several times but I need to design a back and forth drive.
 
-
-
+The water VAT was generated with:
+https://www.makercase.com/basicBox
 
 
 
