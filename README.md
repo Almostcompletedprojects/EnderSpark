@@ -36,6 +36,7 @@ The conversion from a 3D printer to a wire EDM can be done in 6 steps:
 | PC6 M8x1.25 connector | 1 | 3€ |
 | 6mm pneumatic pipe | 2m | 3€ |
 | 4mm silicone tube | 0.5m | 1€ |
+| Silicone seal cartridge | 1 | 5€ |
 | TC4428 | 2 | 4€ |
 | IRF135B203 (or similar) | 2 | 5€ |
 | 4.7uF Polymer capacitor | 5 | 5€ |
