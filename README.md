@@ -27,23 +27,27 @@ The conversion from a 3D printer to a wire EDM can be done in 6 steps:
 | Screws | 50 | 10€ |
 | Nema 17 gearbox 51:1 | 2 | 40€ |
 | 24V membrane pump | 1 | 15€ |
-| Filter cardrige | 4 | 10€ |
-| Adapter 1/2" -> 6mm | 2 | 5€ |
-| M6 push pull connector | 5 | 5€ |
-| 6mm pneumatic pipes | 2m | 3€ |
+| PC/PS plate 50X50X5mm | 1 | 15€ |
+| PM12 pneumatic connector | 1 | 5€ |
+| OD12 ID10 PVC tube | 3m | 5€ |
+| Bottle filter 10" | 1 | 20€ |
+| Filter cardrige | 1 | 5€ |
+| 1/2" -> 10mm barbed fitting | 1 | 2€ |
+| PC6 M8x1.25 connector | 1 | 3€ |
+| 6mm pneumatic pipe | 2m | 3€ |
+| 4mm silicone tube | 0.5m | 1€ |
 | TC4428 | 2 | 4€ |
-| IRF135B203 (or similar) | 2 | 10€ |
+| IRF135B203 (or similar) | 2 | 5€ |
 | 4.7uF Polymer capacitor | 5 | 5€ |
-| Buck converter | 1 | 2€ |
+| Buck converter (pump) | 1 | 2€ |
+| Buck converter (board) | 1 | 2€ |
 | Oled screen | 1 | 3€ |
-| L7812CV | 1 | 2€ |
 | JST connectors | 1 | 4€ |
 | Banana connectors | 5 | 4€ |
 | Wire diodes resistors | 1 | 5€ |
 | Hybrid bearings | 2 | 12€ |
 | Bearings | 4 | 4€ |
 | PLA 200g | 1 | 4€ |
-| PC/PS plate 50X50X5mm | 1 | 15€ |
 | Aluminium parts | 1 | 50€ |
 |  |  |  |
 | Total | a lot | 250€ |
