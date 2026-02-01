@@ -24,7 +24,12 @@ The overall cost is about 250€ without the 3D printer separated in 3 cathegori
 - Mechanical parts ~150€
 - Water managment ~80€
 
-The full part list with some product links **will be** in the [parts folder](Parts/)
+All required filles are/will be availlable here:
+- Firmware for ender3V2 and modification lists here [List](Firmware/Modifications_list)
+- [Post processor for fusion 360](Code/EnderSpark.cps)
+- [GRBL files](PCB/Gerber_Enderspark_PCB_Enderspark_2_2026-01-28.zip) and [design files](PCB) with screenshots
+- Mechanicals parts as .STEP (so you can modify it) are not up to date but will be availlable [here](step_files)
+- .svg files to laser cut the [water container](Parts/Water-container.svg)
 
 
 # WARNiNGS
