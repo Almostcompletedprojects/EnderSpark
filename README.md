@@ -50,7 +50,7 @@ This machine can generate a lot of EMF, it can be an issue if you have a heart a
 | Bearings | 4 | 4€ |
 | PLA 200g | 1 | 4€ |
 | Aluminium parts | 1 | 50€ |
-| Total | - | 150€ |
+| Total |  | 150€ |
 
 A big advantage of wire EDM compared to CNC milling is that the frame doesn't need to be very stiff, the hardware just need to support the wire feeder on the X axis and the water tank ~4kg on the Y axis. The Z axis isn't used during the cutting process but it's quite usefull to help changing the wire.
 
@@ -163,8 +163,7 @@ These 3 main components are connected to a waterblock for cooling, in my experie
 | 6mm pneumatic pipe | 2m | 3€ |
 | 4mm silicone tube | 0.5m | 1€ |
 | Silicone seal cartridge | 1 | 5€ |
-|  |  |  |
-| Total | a lot | 80€ |
+| Total |  | 80€ |
 
 The EDM process must be done under a dielectric fluid, it can be ethanol, oil or kerosene but the easyest solution is obviously deionised water. Water is also used for cooling (the electrical components and the workpiece) and chip evacuation. The "builtplate" is a water tank made out of acrily sheets welded with aceton and a bit of silicone for etancheity. I've also add a steel shit so I can quickly remove it from my magnetic buildplate.
 
