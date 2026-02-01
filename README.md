@@ -23,6 +23,7 @@ The conversion from a 3D printer to a wire EDM can be done in 6 steps:
 | Part | Quantity | Cost per lot |
 |- | - | - |
 | Electronics | - | - |
+|- | - | - |
 | TC4428 | 2 | 4€ |
 | IRF135B203 (or similar) | 2 | 5€ |
 | 4.7uF Polymer capacitor | 5 | 5€ |
@@ -34,6 +35,7 @@ The conversion from a 3D printer to a wire EDM can be done in 6 steps:
 | Wire diodes resistors | 1 | 5€ |
 | Raspberry pi pico  | 1 | 5€ |
 | Mechanics | - | - |
+|- | - | - |
 | Linear rail MGN12H 300mm | 2 | 24€ |
 | Screws | 50 | 10€ |
 | Nema 17 gearbox 51:1 | 2 | 40€ |
@@ -42,6 +44,7 @@ The conversion from a 3D printer to a wire EDM can be done in 6 steps:
 | PLA 200g | 1 | 4€ |
 | Aluminium parts | 1 | 50€ |
 | Water | - | - |
+|- | - | - |
 | 24V membrane pump | 1 | 15€ |
 | PC/PS plate 50X50X5mm | 1 | 15€ |
 | PM12 pneumatic connector | 1 | 5€ |
