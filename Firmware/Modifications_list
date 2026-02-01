@@ -1,0 +1,54 @@
+Config.h: 
+Dummy thermistors the heating elements and sensors has been removed, so replace:
+#define TEMP_SENSOR_0 1 by #define TEMP_SENSOR_0 999 and #define TEMP_SENSOR_BED 1 by #define TEMP_SENSOR_BED 998
+Set the values to 50 and 200: 
+#define DUMMY_THERMISTOR_998_VALUE  50
+#define DUMMY_THERMISTOR_999_VALUE 200
+
+comment heating protections:
+//#define THERMAL_PROTECTION_HOTENDS // Enable thermal protection for all extruders
+//#define THERMAL_PROTECTION_BED     // Enable thermal protection for the heated bed
+//#define THERMAL_PROTECTION_CHAMBER // Enable thermal protection for the heated chamber
+//#define THERMAL_PROTECTION_COOLER  // Enable thermal protection for the laser cooling
+
+//#define PREVENT_COLD_EXTRUSION
+//#define EXTRUDE_MINTEMP 180
+
+Add a second fan
+#define NUM_M106_FANS 2
+
+We will use UART2 (PA2 PA3) to communicate with the pico, this meens no more usb:
+replace #define SERIAL_PORT 1 by #define SERIAL_PORT 2 check that the baudrate is at 115200
+
+Disable nozzle park, very usefull if the wire break during a cut and you have to stop it:
+//#define NOZZLE_PARK_FEATURE
+
+Comment useles stuff like bed leveling option on the lcd:
+//#define LCD_BED_LEVELING
+//#define SHOW_CUSTOM_BOOTSCREEN
+//#define CUSTOM_STATUS_SCREEN_IMAGE
+
+Config _adv.h:
+
+Add startup commands to allow to move in negative directions without homing, also very usefull if the wire is stuck and enable the fan
+all the time to cool the extruder driver which is set to 200% of it's capacity
+#define STARTUP_COMMANDS \
+  "M211 S0\n" \
+  "G91\n" \
+  "M106 P0 S127\n"
+
+pins_CREALITY_V4.h:
+Assigne an empty pin to the heater and the bed, we need PA2 and PA3 for uart to talk to the pico and PA1 for the pump
+#ifndef HEATER_0_PIN
+  #define HEATER_0_PIN                     PC0   // HEATER1
+#endif
+#ifndef HEATER_BED_PIN
+  #define HEATER_BED_PIN                   PC1   // HOT BED
+#endif
+
+Assign the pin from the heater pin to the second fan (to controll the water pump)
+#ifndef FAN1_PIN
+  #define FAN1_PIN                          PA1   // PUMP
+#endif
+
+
