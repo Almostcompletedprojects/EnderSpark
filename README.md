@@ -44,7 +44,7 @@ The conversion from a 3D printer to a wire EDM can be done in 6 steps:
 | Hybrid bearings | 2 | 12€ |
 | Bearings | 4 | 4€ |
 | PLA 200g | 1 | 4€ |
-| PC/PS plate 50*50*5mm | 1 | 15€ |
+| PC/PS plate 50X50X5mm | 1 | 15€ |
 | Aluminium parts | 1 | 50€ |
 |  |  |  |
 | Total | a lot | 250€ |
