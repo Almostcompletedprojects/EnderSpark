@@ -37,8 +37,8 @@ all the time to cool the extruder driver which is set to 200% of it's capacity
   "G91\n" \
   "M106 P0 S127\n"
 
-increase Manual feedrate for the extruder 2 -> 5
-#define MANUAL_FEEDRATE { 50*60, 50*60, 4*60, 5*60 } // (mm/min) Feedrates for manual moves along X, Y, Z, E from panel
+increase Manual feedrate for the extruder 2 -> 10
+#define MANUAL_FEEDRATE { 50*60, 50*60, 4*60, 10*60 } // (mm/min) Feedrates for manual moves along X, Y, Z, E from panel
 pins_CREALITY_V4.h:
 Assigne an empty pin to the heater and the bed, we need PA2 and PA3 for uart to talk to the pico and PA1 for the pump
 #ifndef HEATER_0_PIN
