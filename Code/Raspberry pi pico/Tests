@@ -1,1 +1,2 @@
-
+You can directly use the "main.py" but I'll recommand you to test every function one by one with the test files provided (oled, divider and so on).
+You can use the divider code to callibrate the voltage measurement
