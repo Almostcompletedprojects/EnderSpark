@@ -62,9 +62,9 @@ This machine can generate a lot of EMF, it can be an issue if you have a heart a
 
 A big advantage of wire EDM compared to CNC milling is that the frame doesn't need to be very stiff, the hardware just need to support the wire feeder on the X axis and the water tank ~4kg on the Y axis. The Z axis isn't used during the cutting process but it's quite usefull to help changing the wire.
 
-I've added a linear rail (MGN12H) on X and Y axis, it can be bolted directly on X axis with T nuts and for the why axis you need to drill 4 holes in the buildplate support, thats all.
+I've added a linear rail (MGN12H) on X axis, another can be requiered on Y depending on your version, if the Y carriage feels strong with the regular rollers you don't need any change. The rail is bolted directly on X axis with T nuts and for the why axis you need to drill 4 holes in the buildplate support, thats all.
 
-Wire EDM can be very slow depending on the thickness so one of the most important requirement is to be able to move slowly at a fixed rate. Regular stepper motors aren't able to do that, even with microstepping I made a fully printable belt reducer 1:64 but it need some improvements so I've just brought gearbox for nema 17 that can be directly connected to a 2GT pulley.
+Wire EDM can be very slow depending on the thickness so one of the most important requirement is to be able to move slowly at a fixed rate. Regular stepper motors aren't able to do that even with microstepping. The best solution is to convert both axis to lead screw + 1:3 belt reducer with a 2GT pulley and a 2mm pitch 2 mm lead T8 lead screw and anti-backlash nuts (the plastic ones works fine).
 They cost 20€ each and have some backlash so it's far from the best solution.
 
 ## Wire feeder
