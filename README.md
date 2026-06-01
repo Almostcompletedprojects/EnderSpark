@@ -109,9 +109,9 @@ All the parts are availlable in .sldprt and .step
 
 Both the red and orange parts are 5mm thick aluminium cutted with my homemade CNC with a 3.175mm single flute endmill, the geometry is a bit complex and can be improve but if you want to make it there is a catch. The two parts are electrically insulated and need to be very straight, there is two options for insulating metalic coating. 
 - Anodisation of aluminium + galvanic varnish, it requier sulfuric acid and other chemicals and it's not that easy to make a thick and strong coating
-- Powder coating, there's a few hobbist projects but it involve fine powder which isn't better than sulfuric acid.
+- Powder coating for a steel frame, very durable and steel is stiffer than aluminium.
 
-Both can be DIY or manufacturer by a chinese company like JLCPCB, in the case of powder coating, the frame can be made out of steel (not stainless) wich will give way more stifness. 
+Both can be DIY or custom made by a company like JLCPCB especially in the case of powder coating. 
 
 The two other aluminium parts doesn't need any coating same for the brass wheel, it's just a cylinder with 3 holes.
 
