@@ -229,3 +229,9 @@ A lots of tools are needed to work properly:
 
 
 
+# License
+
+This project (CAD files, models, schematics, and associated code) is licensed under the **[CERN-OHL-S-v2](LICENSE)** (CERN open Hardware License Version 2 strongly reciprocal)
+- **Freedom to build and modify:** You are free to manufacture, study, modify, and distribute this machine, including for commercial purposes.
+- **Strong Copyleft / Reciprocity:** If you modify these designs or code and distribute/sell a product based on them, **you must make all modified source files publicly available under this same license (CERN-OHL-S v2)**.
+- **No warranty:** Provided "as-is" without warranty of any kind.
